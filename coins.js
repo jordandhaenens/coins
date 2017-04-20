@@ -16,7 +16,7 @@ function coinCounter(amount) {
 	change = parseFloat((change - (coinPurse.nickels * .05)).toFixed(2));
 	console.log(change);
 
-	coinPurse.pennies = change;
+	coinPurse.pennies = change * 100;
 	console.log(change);
 
 	return coinPurse;
@@ -24,3 +24,4 @@ function coinCounter(amount) {
 
 console.log(coinCounter(1.49));
 coinCounter(1.49);
+
